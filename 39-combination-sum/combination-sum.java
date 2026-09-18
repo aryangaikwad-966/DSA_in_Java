@@ -1,6 +1,7 @@
 class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> current = new ArrayList<>();
     
         combineSum(0, target, candidates, new ArrayList<>(), result);
         return result;       
